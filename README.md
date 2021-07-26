@@ -9,6 +9,6 @@ A rawer fork of [JsSpim](https://shawnzhong.github.io/JsSpim/)'s [emscripten](ht
 
 ### TODO
 
-- Re-implement code/stack/register inspection and single-stepping from the original JsSpim
-- Run on server and accept POST requests of code and stdin (no need for wasm, just build SPIM from source and host on Glitch, for example)
+- Input field for args
 - Codemirror editor/better UI
+- Re-implement code/stack/register inspection and single-stepping from the original JsSpim
