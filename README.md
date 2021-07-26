@@ -1,31 +1,13 @@
-# JsSpim
-[JsSpim](https://shawnzhong.github.io/JsSpim/) is an online MIPS32 simulator based on Prof. James Larus's [Spim](http://spimsimulator.sourceforge.net/).
+# JsSpim-Lite
 
-> *Spim* is a self-contained simulator that runs MIPS32 programs. It reads and executes assembly language programs written for this processor. *Spim* also provides a simple debugger and minimal set of operating system services. *Spim* does not execute binary (compiled) programs.
->
-> *Spim* implements almost the entire MIPS32 assembler-extended instruction set. (It omits most floating point comparisons and rounding modes and the memory system page tables.) The MIPS architecture has several variants that differ in various ways (e.g., the MIPS64 architecture supports 64-bit integers and addresses), which means that *Spim* will not run programs for all MIPS processors.
+A rawer fork of [JsSpim](https://shawnzhong.github.io/JsSpim/) that's more like the [TIO SPIM runner](https://tio.run/#spim), but faster because it doesn't send a POST request.
 
-The source code is published at [GitHub](https://github.com/ShawnZhong/JsSpim/)
+See also:
+- [Spim](http://spimsimulator.sourceforge.net/)
+- [Spim source on TIO](https://github.com/TryItOnline/spim)
+- [Emscripten](https://emscripten.org/)
 
-## Screenshot
-
-![image-20190530030929768](screenshot.png)
-
-## Screen Record
-
-<img src="screenrecord.gif" width="100%">
-
-## Features
-
-- Click on an instruction to toggle **breakpoint**
-- Use the range slider to **control the execution speed**
-- **Highlight** on changed registers, data segment, and stack
-- **Radix** support for all values
-
-## Built With
-
-- [Spim](http://spimsimulator.sourceforge.net/) - The original simulator written in C++
-- [Emscripten](https://emscripten.org/) - Toolchain to compile C++ source code to WebAssembly using the LLVM IR.
-- [Bootstrap](https://getbootstrap.com/)  - Using the CSS library to build the UI
-- [highlight.js](https://highlightjs.org/) - For highlighting the source code
-
+TODO:
+- Re-implement some of the register stuff from the original JsSpim
+- Run on server and accept POST requests of code and stdin (no need for wasm, just build SPIM from source and host on Glitch, for example)
+- Codemirror editor
