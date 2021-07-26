@@ -1,4 +1,4 @@
-# JsSpim-Lite
+# spimjs
 
 A rawer fork of [JsSpim](https://shawnzhong.github.io/JsSpim/)'s [emscripten](https://emscripten.org/)-generated SPIM that's more like the [TIO SPIM runner](https://tio.run/#spim), but faster because it runs in the browser.
 
