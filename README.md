@@ -10,6 +10,7 @@ A rawer fork of [JsSpim](https://shawnzhong.github.io/JsSpim/)'s [emscripten](ht
 ### TODO
 
 - Input field for args
-- Codemirror editor/better UI
+- Run code from query params
+- Codemirror/ace editor/better UI
 - Re-implement code/stack/register inspection and single-stepping from the original JsSpim
 - Enable input/reading/writing(?) of files
